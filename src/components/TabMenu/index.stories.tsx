@@ -19,9 +19,9 @@ export const Default: React.FC = () => {
   const [index, setIndex] = useState(0);
   const [index2, setIndex2] = useState(0);
   const [index3, setIndex3] = useState(0);
-  const handleClick = (newIndex) => setIndex(newIndex);
-  const handleClick2 = (newIndex) => setIndex2(newIndex);
-  const handleClick3 = (newIndex) => setIndex3(newIndex);
+  const handleClick = (newIndex: React.SetStateAction<number>) => setIndex(newIndex);
+  const handleClick2 = (newIndex: React.SetStateAction<number>) => setIndex2(newIndex);
+  const handleClick3 = (newIndex: React.SetStateAction<number>) => setIndex3(newIndex);
 
   return (
     <>

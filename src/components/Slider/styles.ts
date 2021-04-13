@@ -1,9 +1,9 @@
-import { InputHTMLAttributes } from "react";
-import styled from "styled-components";
-import Text from "../Text/Text";
-import bunnyHeadMain from "./svg/bunnyhead-main.svg";
-import bunnyHeadMax from "./svg/bunnyhead-max.svg";
-import bunnyButt from "./svg/bunnybutt.svg";
+import { InputHTMLAttributes } from 'react';
+import styled from 'styled-components';
+import Text from '../Text/Text';
+import bunnyHeadMain from './svg/bunnyhead-main.svg';
+import bunnyHeadMax from './svg/bunnyhead-max.svg';
+import bunnyButt from './svg/bunnybutt.svg';
 
 interface SliderLabelProps {
   progress: string;
@@ -18,7 +18,7 @@ interface DisabledProp {
 }
 
 const getCursorStyle = ({ disabled = false }: DisabledProp) => {
-  return disabled ? "not-allowed" : "cursor";
+  return disabled ? 'not-allowed' : 'cursor';
 };
 
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
@@ -27,12 +27,12 @@ const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   cursor: ${getCursorStyle};
   width: 24px;
   height: 32px;
-  filter: ${disabled ? "grayscale(100%)" : "none"};
+  filter: ${disabled ? 'grayscale(100%)' : 'none'};
   transform: translate(-2px, -2px);
   transition: 200ms transform;
 
   &:hover {
-    transform: ${disabled ? "scale(1) translate(-2px, -2px)" : "scale(1.1) translate(-3px, -3px)"};
+    transform: ${disabled ? 'scale(1) translate(-2px, -2px)' : 'scale(1.1) translate(-3px, -3px)'};
   }
 `;
 
@@ -55,7 +55,7 @@ export const SliderLabel = styled(Text)<SliderLabelProps>`
 export const BunnyButt = styled.div<DisabledProp>`
   background: url(${bunnyButt}) no-repeat;
   height: 32px;
-  filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
+  filter: ${({ disabled }) => (disabled ? 'grayscale(100%)' : 'none')};
   position: absolute;
   width: 15px;
 `;
@@ -89,7 +89,7 @@ export const StyledInput = styled.input<StyledInputProps>`
 `;
 
 export const BarBackground = styled.div<DisabledProp>`
-  background-color: ${({ theme, disabled }) => theme.colors[disabled ? "textDisabled" : "inputSecondary"]};
+  background-color: ${({ theme, disabled }) => theme.colors[disabled ? 'textDisabled' : 'inputSecondary']};
   height: 2px;
   position: absolute;
   top: 18px;
@@ -98,7 +98,7 @@ export const BarBackground = styled.div<DisabledProp>`
 
 export const BarProgress = styled.div<DisabledProp>`
   background-color: ${({ theme }) => theme.colors.primary};
-  filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
+  filter: ${({ disabled }) => (disabled ? 'grayscale(100%)' : 'none')};
   height: 10px;
   position: absolute;
   top: 18px;

@@ -15,7 +15,7 @@ export const Default: React.FC = () => {
     maximumFractionDigits: 2,
   })} USD`;
 
-  const handleChange = (evt) => {
+  const handleChange = (evt:any) => {
     setValue(evt.target.value);
   };
 

@@ -1,11 +1,11 @@
-import { HTMLAttributes } from "react";
-import { SpaceProps } from "styled-system";
-import { Colors } from "../../theme/types";
+import { HTMLAttributes } from 'react';
+import { SpaceProps } from 'styled-system';
+import { Colors } from '../../theme/types';
 
 export interface CardRibbonProps {
   variantColor?: keyof Colors;
   text: string;
-  ribbonPosition?: "right" | "left";
+  ribbonPosition?: 'right' | 'left';
 }
 
 export type CardTheme = {

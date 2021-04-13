@@ -47,7 +47,7 @@ export const Default: React.FC = () => {
 export const Variants: React.FC = () => {
   const [value, setValue] = useState(10);
 
-  const handleChange = (newValue) => {
+  const handleChange = (newValue: React.SetStateAction<number>) => {
     setValue(newValue);
   };
 

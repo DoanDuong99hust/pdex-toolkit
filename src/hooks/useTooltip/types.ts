@@ -4,4 +4,4 @@ export interface TooltipRefs {
   tooltipVisible: boolean;
 }
 
-export type TriggerType = "click" | "hover" | "focus";
+export type TriggerType = 'click' | 'hover' | 'focus';

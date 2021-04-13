@@ -15,14 +15,14 @@ export const Default: React.FC = (args) => {
 };
 
 export const Avatar = Default.bind({});
-Avatar.args = {
+(Avatar as any ).args = {
   width: 40,
   height: 40,
   variant: "circle",
 };
 
 export const Animation = Default.bind({});
-Animation.args = {
+( Animation as any ).args = {
   width: 100,
   height: 200,
   animation: "waves",

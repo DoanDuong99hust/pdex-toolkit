@@ -27,7 +27,7 @@ const Row = styled.div`
 
 export const MenuButtons: React.FC = () => {
   const [index, setIndex] = useState(0);
-  const handleClick = (newIndex) => setIndex(newIndex);
+  const handleClick = (newIndex: React.SetStateAction<number>) => setIndex(newIndex);
   return (
     <Row>
       <ButtonMenu activeIndex={index} onItemClick={handleClick}>
