@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "outDir": "./lib",
+      "outDir": "./src",
       "target": "ES5",
       "lib": ["dom", "DOM.Iterable", "ESNext"],
       "allowJs": true,
