@@ -37,7 +37,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
     <>
       <LogoRoundIcon className="mobile-icon" />
       {/* <LogoWithText className="desktop-icon" isDark={isDark} /> */}
-      <LogoIcon className="desktop-icon"/>
+      <LogoRoundIcon className="desktop-icon"/>
     </>
   );
 
