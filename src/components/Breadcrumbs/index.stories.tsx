@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "../Text/Text";
 import Link from "../Link/Link";
-import LogoIcon from "../Svg/Icons/Logo";
+import LogoRoundIcon from "../Svg/Icons/Logo";
 import WonIcon from "../Svg/Icons/Won";
 import BreadCrumbs from "./Breadcrumbs";
 
@@ -33,7 +33,7 @@ export const CustomSeparator: React.FC = () => {
   return (
     <Text p="32px">
       <Text mb="16px">
-        <BreadCrumbs separator={<LogoIcon width="24px" />}>
+        <BreadCrumbs separator={<LogoRoundIcon width="24px" />}>
           <Link href="/" color="secondary" style={{ fontWeight: 400 }}>
             Link
           </Link>

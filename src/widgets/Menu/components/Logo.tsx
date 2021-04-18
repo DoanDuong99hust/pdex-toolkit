@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { LogoIcon, LogoRoundIcon } from "../../../components/Svg";
+import { LogoRoundIcon } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
-import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
+import { HamburgerIcon, HamburgerCloseIcon, LogoRoundIcon as LogoWithText } from "../icons";
 import MenuButton from "./MenuButton";
 
 interface Props {
